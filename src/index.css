@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+root {
+  --primary-color : #000000;
+  --secondary-color : #282A3A;
+  --accent-color : #735F32;
+  --accent-color-secondary : #C69749;
+  --text-color: #ffffff;
+}
+
+html {
+  scroll-behavior : smooth;
+  
+}
