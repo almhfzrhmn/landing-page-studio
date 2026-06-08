@@ -1,43 +1,88 @@
-﻿// import React from "react";
-import { Button } from "@heroui/react";
+﻿import { Button } from "@heroui/react";
 import FloatingLines from "./ui/FloatingLines.jsx";
+import FuzzyText from "./FuzzyText.jsx";
+import heroImage from "../assets/hero.png";
+import EvilEye from "./EvilEye.jsx";
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="relative w-full text-white overflow-hidden min-h-[85vh] flex items-center"
+      className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-black pt-24 text-white"
     >
-      <div className="absolute inset-0 z-0">
-        <FloatingLines
-          enabledWaves={["top", "middle", "bottom"]}
-          lineCount={8}
-          lineDistance={8}
-          bendRadius={8}
-          bendStrength={-2}
-          interactive
-          parallax={true}
-          animationSpeed={1}
-          linesGradient={["#e945f5", "#6f6f6f", "#6a6a6a"]}
+      <img
+        src={heroImage}
+        alt="SoundSpace Studio recording room"
+        className="absolute inset-0 h-full w-full object-cover opacity-50"
+      />
+
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(220,38,38,0.2),transparent_50%),linear-gradient(180deg,rgba(0,0,0,0.85)_0%,rgba(0,0,0,0.6)_50%,rgba(0,0,0,0.95)_100%)]" />
+
+      <div className="absolute inset-0 z-0 opacity-40 mix-blend-screen">
+        <EvilEye
+          eyeColor="#5d0712"
+          intensity={1.5}
+          pupilSize={0.6}
+          irisWidth={0.25}
+          glowIntensity={0.35}
+          scale={0.8}
+          noiseScale={1}
+          pupilFollow={1}
+          flameSpeed={0.5}
+          backgroundColor="#120F17"
         />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 gap-12 items-center w-full">
-        <div className="flex flex-col space-y-6 text-center justify-center z-10">
-          <h1 className="font-poppins font-semibold tracking-normal text-5xl mt-0 mb-0">
-            Makes your dreams come true in
-          </h1>
-          <span className="font-russo-one font-bold tracking-tight text-6xl mt-2">
-            SoundSpace
-            <span className="text-red-600">Studio</span>
-          </span>
-          <p className="text-sm tracking-normal font-light">
-            Check Out Our New Gears!
-          </p>
-          <div className="flex items-center justify-center">
-            <Button className="bg-transparent text-white text-sm font-light transition-all duration-300 hover:bg-orange-600 cursor-pointer border-2 backdrop-blur-2xl border-red-500">
-              See Gears
-            </Button>
+      {/* 4. Main Layout Container (Centered Theme) */}
+      <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center text-center px-5 pb-24 pt-16 md:px-6">
+        {/* Sub-heading Context */}
+        <p className="mb-3 font-poppins text-xs font-semibold tracking-widest uppercase text-white/50 md:text-sm">
+          Makes your dreams come true in
+        </p>
+
+        {/* Main Heading Text Wrapper with Fluid Sizing */}
+        <div className="w-full font-unifraktur-cook leading-none flex justify-center py-2">
+          <FuzzyText
+            baseIntensity={0.04}
+            hoverIntensity={0.85}
+            enableHover
+            fontSize="clamp(2.8rem, 7.5vw, 6.5rem)"
+            fontFamily="inherit"
+            color="#b58709"
+            glitchInterval={0.6}
+          >
+            SoundSpace Studio
+          </FuzzyText>
+        </div>
+
+        {/* Description Body */}
+        <p className="mt-6 max-w-2xl font-poppins text-base leading-relaxed text-white/70 md:text-lg">
+          A modern production room for artists who want clean captures, warm
+          detail, and gear that stays out of the creative flow.
+        </p>
+
+        {/* Call to Action Buttons */}
+        <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center justify-center w-full sm:w-auto">
+          <Button className="w-full sm:w-auto bg-[#b58709] hover:bg-red-600 text-white font-semibold px-8 py-6 text-sm tracking-wide border border-red-500/20 cursor-pointer transition-all duration-300 hover:scale-105 rounded-full shadow-lg shadow-red-900/40">
+            See Gears
+          </Button>
+
+          <Button
+            variant="outline"
+            className="w-full sm:w-auto text-white px-8 py-6 text-sm font-semibold tracking-wide border border-white/20 bg-white/5 cursor-pointer transition-all duration-300 hover:bg-white/10 hover:scale-105 rounded-full backdrop-blur-sm"
+          >
+            Explore Studio
+          </Button>
+        </div>
+      </div>
+
+      {/* 5. Minimalist Footer Border & Utility Text */}
+      <div className="absolute bottom-0 left-0 right-0 z-10 hidden sm:block">
+        <div className="mx-auto max-w-7xl px-5 md:px-6">
+          <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+          <div className="flex items-center justify-between py-5 text-[10px] font-semibold uppercase tracking-widest text-white/40">
+            <span>SoundSpace Studio</span>
+            <span>New gears available</span>
           </div>
         </div>
       </div>
