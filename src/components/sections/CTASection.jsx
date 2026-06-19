@@ -22,14 +22,14 @@ const CTASection = () => {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a href={`https://wa.me/${contactInfo.whatsapp.replace('+', '')}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-            <Button className="w-full bg-[#b58709]/80 hover:bg-[#b58709] text-white font-semibold px-10 py-6 text-sm tracking-wide border border-[#b58709]/50 cursor-pointer transition-all duration-300 hover:scale-105 rounded-full shadow-lg shadow-[#b58709]/20 flex items-center gap-2 h-auto">
+            <Button className="w-full bg-[#b58709]/80 hover:bg-[#b58709] text-white font-semibold px-10 py-3 text-sm tracking-wide border border-[#b58709]/50 cursor-pointer transition-all duration-300 hover:scale-105 rounded-full shadow-lg shadow-[#b58709]/20 flex items-center gap-2 h-auto">
               <MessageCircle size={18} />
               <span>Chat on WhatsApp</span>
             </Button>
           </a>
           
           <a href="#contact" className="w-full sm:w-auto">
-            <Button variant="outline" className="w-full text-white px-10 py-6 text-sm font-semibold tracking-wide border border-white/20 bg-white/5 cursor-pointer transition-all duration-300 hover:bg-white/10 hover:scale-105 rounded-full backdrop-blur-sm flex items-center gap-2 h-auto">
+            <Button variant="outline" className="w-full text-white px-10 py-3  text-sm font-semibold tracking-wide border border-white/20 bg-white/5 cursor-pointer transition-all duration-300 hover:bg-white/10 hover:scale-105 rounded-full backdrop-blur-sm flex items-center gap-2 h-auto">
               <CalendarCheck size={18} />
               <span>Book a Session</span>
             </Button>
