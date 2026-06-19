@@ -1,6 +1,5 @@
 ﻿import { Button } from "@heroui/react";
 import FuzzyText from "./FuzzyText.jsx";
-import heroImage from "../assets/hero.png";
 import EvilEye from "./EvilEye.jsx";
 
 const Hero = () => {
@@ -9,15 +8,10 @@ const Hero = () => {
       id="home"
       className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-black pt-24 text-white"
     >
-      {/* <img
-        src={heroImage}
-        alt="SoundSpace Studio recording room"
-        className="absolute inset-0 h-full w-full object-cover opacity-50"
-      /> */}
 
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(220,38,38,0.2),transparent_50%),linear-gradient(180deg,rgba(0,0,0,0.85)_0%,rgba(0,0,0,0.6)_50%,rgba(0,0,0,0.95)_100%)]" />
 
-      <div className="absolute inset-0 z-0 opacity-40 mix-blend-screen">
+      <div className="absolute inset-0 z-0 opacity-30 mix-blend-screen">
         <EvilEye
           eyeColor="#5d0712"
           intensity={1.5}
