@@ -1,5 +1,4 @@
 ﻿import { Button } from "@heroui/react";
-import FloatingLines from "./ui/FloatingLines.jsx";
 import FuzzyText from "./FuzzyText.jsx";
 import heroImage from "../assets/hero.png";
 import EvilEye from "./EvilEye.jsx";
@@ -10,11 +9,11 @@ const Hero = () => {
       id="home"
       className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-black pt-24 text-white"
     >
-      <img
+      {/* <img
         src={heroImage}
         alt="SoundSpace Studio recording room"
         className="absolute inset-0 h-full w-full object-cover opacity-50"
-      />
+      /> */}
 
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(220,38,38,0.2),transparent_50%),linear-gradient(180deg,rgba(0,0,0,0.85)_0%,rgba(0,0,0,0.6)_50%,rgba(0,0,0,0.95)_100%)]" />
 
@@ -28,12 +27,11 @@ const Hero = () => {
           scale={0.8}
           noiseScale={1}
           pupilFollow={1}
-          flameSpeed={0.5}
+          flameSpeed={0.3}
           backgroundColor="#120F17"
         />
       </div>
 
-      {/* 4. Main Layout Container (Centered Theme) */}
       <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center text-center px-5 pb-24 pt-16 md:px-6">
         {/* Sub-heading Context */}
         <p className="mb-3 font-poppins text-xs font-semibold tracking-widest uppercase text-white/50 md:text-sm">
@@ -56,14 +54,14 @@ const Hero = () => {
         </div>
 
         {/* Description Body */}
-        <p className="mt-6 max-w-2xl font-poppins text-base leading-relaxed text-white/70 md:text-lg">
+        <p className="mt-6 max-w-2xl font-poppins text-base leading-tight tracking-tight text-white/70 md:text-lg">
           A modern production room for artists who want clean captures, warm
           detail, and gear that stays out of the creative flow.
         </p>
 
         {/* Call to Action Buttons */}
         <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center justify-center w-full sm:w-auto">
-          <Button className="w-full sm:w-auto bg-[#b58709] hover:bg-red-600 text-white font-semibold px-8 py-6 text-sm tracking-wide border border-red-500/20 cursor-pointer transition-all duration-300 hover:scale-105 rounded-full shadow-lg shadow-red-900/40">
+          <Button className="w-full sm:w-auto bg-[#b58709]/50 hover:bg-[#b58709] text-white font-semibold px-8 py-6 text-sm tracking-wide border border-red-500/20 cursor-pointer transition-all duration-300 hover:scale-105 rounded-full shadow-lg shadow-red-900/40 hover:scale-120">
             See Gears
           </Button>
 
@@ -73,6 +71,7 @@ const Hero = () => {
           >
             Explore Studio
           </Button>
+
         </div>
       </div>
 

@@ -4,9 +4,11 @@ import { Menu, X } from "lucide-react";
 
 const navItems = [
   { name: "Home", href: "#home" },
-  { name: "Gears", href: "#gears" },
-  { name: "About Us", href: "#about" },
-  { name: "Reviews", href: "#reviews" },
+  { name: "About", href: "#about" },
+  { name: "Services", href: "#services" },
+  { name: "Gallery", href: "#gallery" },
+  { name: "Pricing", href: "#pricing" },
+  { name: "Contact", href: "#contact" },
 ];
 
 const Navbar = () => {
@@ -20,10 +22,7 @@ const Navbar = () => {
             href="#home"
             className="group inline-flex items-center gap-3 rounded-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-red-400"
           >
-            <span className="flex size-10 items-center justify-center rounded-full font-russo-one text-sm shadow-inner shadow-white/10 transition duration-300 group-hover:border-red-400/50">
-              SS
-            </span>
-            <h1 className="font-russo-one text-lg tracking-normal md:text-xl">
+            <h1 className="font-unifraktur-cook text-lg tracking-normal md:text-xl">
               SoundSpace
               <span className="text-red-700">Studio</span>
             </h1>
@@ -45,7 +44,7 @@ const Navbar = () => {
         <div className="hidden items-center justify-end md:flex">
           <Button
 
-            className="bg-transparent border border-red-600/50 backdrop-blur-2xl transition-all duration-200 ease-in-out hover:bg-red-700/50 cursor-pointer"
+            className="bg-red-800/20 border border-white/20 backdrop-blur-2xl transition-all duration-200 ease-in-out hover:bg-red-700/50 cursor-pointer"
           >
             Book Session
           </Button>
