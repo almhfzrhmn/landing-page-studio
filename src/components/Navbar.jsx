@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed left-0 top-4 z-50 w-full px-4 text-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-between rounded-full px-4 py-3 shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl md:px-5">
+      <div className="mx-auto flex max-w-7xl items-center justify-between md:px-5">
         <div className="flex items-center">
           <div className={`transition-all duration-500 ease-in-out ${isScrolled ? "opacity-0 -translate-y-10 pointer-events-none" : "opacity-100 translate-y-0"}`}>
           <a
@@ -40,7 +40,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="items-center p-1 backdrop-blur-xl md:flex">
+        <div className="items-center p-1 backdrop-blur-xl md:flex rounded-full">
           {navItems.map((item) => (
             <a
               key={item.name}
