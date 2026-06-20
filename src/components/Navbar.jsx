@@ -52,7 +52,8 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="hidden items-center justify-end md:flex">
+        <div className={`hidden items-center justify-end md:flex transition-all duration-500 ease-in-out 
+            ${isScrolled ? "opacity-20" : "opacity-100"}`}>
           <Button
             className="bg-[#b58709]/50 text-white px-4 py-2 text-sm font-medium border border-white/10 backdrop-blur-2xl cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#b58709] tracking-wide hover:scale-105"
           >

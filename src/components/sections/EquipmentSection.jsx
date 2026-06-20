@@ -3,7 +3,8 @@ import { Mic, Monitor, HardDrive, Speaker, SlidersHorizontal, Guitar, Drum } fro
 import SectionWrapper from '@/components/ui/SectionWrapper';
 import SectionHeading from '@/components/ui/SectionHeading';
 import GlassCard from '@/components/ui/GlassCard';
-import { equipment } from '../../data/siteData';
+// import { equipment } from '../../data/siteData';
+import { EquipmentData } from '@/data/equipmentData';
 
 const iconMap = {
   Mic,
@@ -19,15 +20,15 @@ export default function EquipmentSection() {
   const [activeCategory, setActiveCategory] = useState('All');
 
   const categories = useMemo(
-    () => ['All', ...new Set(equipment.map((item) => item.category))],
+    () => ['All', ...new Set(EquipmentData.map((item) => item.category))],
     [],
   );
 
   const filtered = useMemo(
     () =>
       activeCategory === 'All'
-        ? equipment
-        : equipment.filter((item) => item.category === activeCategory),
+        ? EquipmentData
+        : EquipmentData.filter((item) => item.category === activeCategory),
     [activeCategory],
   );
 

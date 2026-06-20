@@ -1,0 +1,45 @@
+export const EquipmentData = [
+    {
+      name : "Fender Stratocaster",
+      brand : "Fender",
+      category : "Guitar",
+      description : "",
+      isNew : false,
+    },
+    {
+      name : "Epiphone SG",
+      brand : "Epiphone",
+      category : "Guitar",
+      description : "",
+      isNew : false,
+      imageUrl : "",
+    },
+    {
+      name : "Pearl Demon Drive",
+      brand : "Pearl",
+      category : "Drums",
+      description : "Double pedal for drums",
+      isNew : true,
+    },
+    {
+      name : "Zildjian 16' Crash Cymbal",
+      brand : "Zildjian",
+      category : "Drums",
+      description : "Crash Cymbal",
+      isNew : false,
+    },
+    {
+      name : "Neumann U87",
+      brand : "Neumann",
+      category : "Microphones",
+      description : "Industry-standard large-diaphragm condenser microphone",
+      isNew : false,
+    },
+    {
+      name : "Pro Tools HDX",
+      brand : "Avid",
+      category : "DAW",
+      description : "Industry-standard digital audio workstation with HDX processingg",
+      isNew : false,
+    },
+]

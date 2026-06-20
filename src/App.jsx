@@ -11,6 +11,7 @@ import FAQSection from './components/sections/FAQSection';
 import ContactSection from './components/sections/ContactSection';
 import CTASection from './components/sections/CTASection';
 import Footer from './components/sections/Footer';
+import { GuitarModel } from './components/GuitarModel';
 
 function App() {
   return (

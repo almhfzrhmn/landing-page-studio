@@ -15,14 +15,27 @@ export const services = [
 ];
 
 export const equipment = [
-  { name: 'Neumann U87', brand: 'Neumann', category: 'Microphones', description: 'Industry-standard large-diaphragm condenser microphone' },
-  { name: 'SSL 4000G+', brand: 'Solid State Logic', category: 'Console', description: 'Legendary analog mixing console with G-series computer' },
-  { name: 'Pro Tools HDX', brand: 'Avid', category: 'DAW', description: 'Industry-standard digital audio workstation with HDX processing' },
-  { name: 'Genelec 8351B', brand: 'Genelec', category: 'Monitors', description: 'Three-way coaxial studio monitors with SAM technology' },
-  { name: 'Universal Audio 1176', brand: 'Universal Audio', category: 'Outboard', description: 'Classic FET limiting amplifier for vocals and instruments' },
-  { name: 'Fender Twin Reverb', brand: 'Fender', category: 'Amps', description: 'Iconic guitar amplifier with pristine clean tone' },
-  { name: 'Pearl Reference', brand: 'Pearl', category: 'Drums', description: 'Professional reference series drum kit with Zildjian cymbals' },
-  { name: 'API 2500', brand: 'API', category: 'Outboard', description: 'Stereo bus compressor for punchy, musical compression' },
+    {
+      name : "Fender Stratocaster",
+      brand : "Fender",
+      category : "Guitar",
+      description : "",
+      isNew : false,
+    },
+    {
+      name : "Epiphone SG",
+      brand : "Epiphone",
+      category : "Guitar",
+      description : "",
+      isNew : false
+    },
+    {
+      name : "Pearl Demon Drive",
+      brand : "Pearl",
+      category : "Drums",
+      description : "Double pedal for drums",
+      isNew : true,
+    },
 ];
 
 export const galleryItems = [

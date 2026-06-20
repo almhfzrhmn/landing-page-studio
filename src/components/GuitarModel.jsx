@@ -4,9 +4,11 @@ export const GuitarModel = () => {
     const {scene} = useGLTF("/models/exp_guitar.glb");
 
     return(
-        <primitive
-            object={scene}
-            scale={5}
-        />
+        <div className="flex items-center justify-center min-h-screen z-100">
+            <primitive
+                object={scene}
+                scale={5}
+            />
+        </div>
     );
 }
