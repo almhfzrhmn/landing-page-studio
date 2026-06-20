@@ -5,6 +5,7 @@ export const EquipmentData = [
       category : "Guitar",
       description : "",
       isNew : false,
+      imageUrl : "../../public/img/strat.webp"
     },
     {
       name : "Epiphone SG",
@@ -18,8 +19,9 @@ export const EquipmentData = [
       name : "Pearl Demon Drive",
       brand : "Pearl",
       category : "Drums",
-      description : "Double pedal for drums",
+      description : "The Demon Direct Drive Double Bass Pedal system is so advanced and so well engineered, you'll swear you're playing two bass drums. From lightning-fast blast beats to deep, rock-solid grooves, Demon Drive is designed to maximize your playing in any style. ",
       isNew : true,
+      imageUrl : "../../public/img/demon drive.webp",
     },
     {
       name : "Zildjian 16' Crash Cymbal",
