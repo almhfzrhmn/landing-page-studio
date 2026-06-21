@@ -116,10 +116,10 @@ export const faqItems = [
 ];
 
 export const contactInfo = {
-  address: 'Jl. Kemang Raya No. 42, South Jakarta, Indonesia 12730',
+  address: 'Jl. Danau Baratan 1 gang Restu, Sumatera Utara, Indonesia',
   whatsapp: '+6281234567890',
   whatsappDisplay: '0812-3456-7890',
-  email: 'hello@soundspacestudio.com',
+  email: 'almahfuzhrohman@gmail.com',
   hours: 'Mon-Sat: 10AM-10PM | Sun: 12PM-8PM',
 };
 
