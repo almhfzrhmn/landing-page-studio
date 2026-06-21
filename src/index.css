@@ -14,25 +14,6 @@
   --font-poppins : "Poppins", sans-serif;
   --font-unifraktur-cook : "UnifrakturCook", cursive;
 
-  --animate-marquee: marquee 10s linear infinite;
-  --animate-marquee-reverse : marquee-reverse 10s linear infinite;
-
-  @keyframes marquee {
-    from {
-      transform : translateX(0);
-    }
-    to {
-      transform : translateX(-50%);
-    }
-  }
-
-  @keyframes marquee-reverse {
-    from {
-      transform : translateX(-50%);
-    } to {
-      transform : translateX(0);
-    }
-  }
 } 
 
 /* root {

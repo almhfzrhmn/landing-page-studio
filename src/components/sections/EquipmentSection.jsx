@@ -30,7 +30,7 @@ export default function EquipmentSection() {
       />
 
       {/* Category filters */}
-      <div className="flex flex-wrap justify-center gap-3 mt-10 mb-2 top-0">
+      <div className="flex flex-wrap justify-center gap-3 mt-10 mb-2 top-0" loading="lazy">
         {categories.map((cat) => (
           <button
             key={cat}
@@ -60,6 +60,7 @@ export default function EquipmentSection() {
                     src={item.imageUrl}
                     alt={item.name}
                     className="object-cover w-full h-full transition-all duration-300 ease-in-out hover:scale-105"
+                    loading="lazy"
                     ></img>
                 </div>
 
