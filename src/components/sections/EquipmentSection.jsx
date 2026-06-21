@@ -48,6 +48,8 @@ export default function EquipmentSection() {
 
       {/* Equipment grid */}
       <div className="flex items-center justify-center gap-10">
+        <div className="w-[700px]">
+          
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-5">
           {filtered.map((item, idx) => {
             return (
@@ -84,7 +86,8 @@ export default function EquipmentSection() {
             );
           })}
         </div>
-        <div className="w-full h-full flex flex-col items-center justify-center">
+        </div>
+        <div className="w-[300px] h-full flex flex-col items-center justify-center">
           <img 
             src="../../../public/img/strat.webp"
             className="rotate-270 scale-300 transition-transform duration-300 hover:scale-350"
