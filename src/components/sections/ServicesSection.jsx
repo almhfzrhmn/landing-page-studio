@@ -2,7 +2,7 @@ import { Mic, Sliders, Disc3, Music4, Users, Podcast } from 'lucide-react';
 import SectionWrapper from '@/components/ui/SectionWrapper';
 import SectionHeading from '@/components/ui/SectionHeading';
 import GlassCard from '@/components/ui/GlassCard';
-import { services } from '../../data/siteData';
+import { ServicesData } from '@/data/servicesData';
 
 const iconMap = {
   Mic,
@@ -24,7 +24,7 @@ export default function ServicesSection() {
       />
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-        {services.map((service, idx) => {
+        {ServicesData.map((service, idx) => {
           const Icon = iconMap[service.icon] || Mic;
           return (
             <GlassCard key={idx}>
