@@ -1,11 +1,15 @@
-import { Mic, Sliders, Disc3, Music4, Users, Podcast } from 'lucide-react';
+import { Mic, Sliders, Disc3, Music4, Users, Podcast } from "lucide-react";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { ServicesData } from "@/data/servicesData";
 import { useState } from "react";
 
 export default function ServicesSection() {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(null);
+
+  const toggleService = (serviceId) => {
+    setActive((prev) => (prev === serviceId ? null : serviceId));
+  };
 
   return (
     <SectionWrapper id="services">
@@ -25,7 +29,8 @@ export default function ServicesSection() {
             >
               {/* HEADER */}
               <button
-                onClick={() => setActive(service.id)}
+                onClick={() => toggleService(service.id)}
+                aria-expanded={active === service.id}
                 className="w-full flex justify-between items-center py-8 cursor-pointer"
               >
                 <div className="flex items-center gap-6">
@@ -38,45 +43,39 @@ export default function ServicesSection() {
               </button>
 
               {/* ACTIVE CONTENT */}
-              {active === service.id && service.description  && (
-                <div className="pb-10 pl-20">
-                  <div className="grid lg:grid-cols-2 gap-10">
-
-                    {/* LEFT SIDE */}
-                    <div>
-                      <p className="text-zinc-300 mb-6 text-lg tracking-tighter leading-tight">
-                        {service.description}
-                      </p>
-                      <ul className="space-y-2 text-zinc-300">
-                        {service.features.map((feature, i) => (
-                          <li 
-                            key={i}
-                          >
-                            - {feature}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    {/* RIGHT SIDE */}
-                    <div className="grid grid-cols-3 gap-4 md:grid-cols-4">
-                      {service.images.map((image, i) => (
-                        <img
-                          key={i}
-
-                          // TO DO : ADD IMAGES
-                          src={image}
-                          alt=''
-                          className='w-full h-40 rounded-md transition-all duration-300 ease-in-out hover:scale-110'
-                        >
-                        </img>
+              <div
+                className={`overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                  active === service.id && service.description
+                    ? "max-h-[900px] opacity-100 translate-y-0 pb-10 pl-20"
+                    : "max-h-0 opacity-0 -translate-y-2"
+                }`}
+              >
+                <div className="grid lg:grid-cols-2 gap-10">
+                  {/* LEFT SIDE */}
+                  <div>
+                    <p className="text-zinc-300 mb-6 text-lg tracking-tighter leading-tight">
+                      {service.description}
+                    </p>
+                    <ul className="space-y-2 text-zinc-300">
+                      {service.features.map((feature, i) => (
+                        <li key={i}>- {feature}</li>
                       ))}
-                    </div>
-
+                    </ul>
                   </div>
 
+                  {/* RIGHT SIDE */}
+                  <div className="grid grid-cols-3 gap-4 md:grid-cols-4">
+                    {service.images.map((image, i) => (
+                      <img
+                        key={i}
+                        src={image}
+                        alt=""
+                        className="w-full h-40 rounded-md transition-all duration-300 ease-in-out hover:scale-110"
+                      />
+                    ))}
+                  </div>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>

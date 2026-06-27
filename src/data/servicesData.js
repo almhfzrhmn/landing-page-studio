@@ -40,7 +40,7 @@ export const ServicesData = [
     description:
       "Precision mastering to bring your tracks to commercial loudness while preserving dynamic range.",
     features: [
-      "Loudness optimization",
+      "Loudness optimization", 
       "Stereo mastering",
       "Streaming-ready export",
       "WAV and MP3 delivery",
