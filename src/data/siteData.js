@@ -29,17 +29,6 @@ export const equipment = [
     },
 ];
 
-export const galleryItems = [
-  { id: 1, alt: 'Main recording studio live room', category: 'Studio' },
-  { id: 2, alt: 'SSL mixing console close-up', category: 'Equipment' },
-  { id: 3, alt: 'Vocal recording booth', category: 'Studio' },
-  { id: 4, alt: 'Outboard gear rack', category: 'Equipment' },
-  { id: 5, alt: 'Band rehearsal room', category: 'Rooms' },
-  { id: 6, alt: 'Podcast recording suite', category: 'Rooms' },
-  { id: 7, alt: 'Control room monitoring setup', category: 'Studio' },
-  { id: 8, alt: 'Guitar and bass amplifier collection', category: 'Equipment' },
-];
-
 export const portfolioItems = [
   { id: 1, title: 'Echoes of Dawn', category: 'Album Production', description: 'Full album production for indie rock band featuring 12 tracks.' },
   { id: 2, title: 'Urban Frequencies', category: 'Mixing & Mastering', description: 'Hip-hop EP mixing and mastering for independent artist.' },

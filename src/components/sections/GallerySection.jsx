@@ -2,6 +2,7 @@ import { Camera, Eye } from 'lucide-react';
 import SectionWrapper from '@/components/ui/SectionWrapper';
 import SectionHeading from '@/components/ui/SectionHeading';
 import { galleryItems } from '../../data/siteData';
+import { GalleryData } from '@/data/galleryData';
 
 const gradients = [
   'bg-gradient-to-br from-[#b58709]/10 via-transparent to-red-900/10',
@@ -21,7 +22,7 @@ export default function GallerySection() {
       />
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-12">
-        {galleryItems.map((item, idx) => {
+        {GalleryData.map((item, idx) => {
           const isLarge = idx === 0 || idx === 5;
           const gradient = gradients[idx % gradients.length];
 
@@ -40,10 +41,14 @@ export default function GallerySection() {
                   isLarge ? 'min-h-[280px]' : ''
                 }`}
               >
-                <Camera
+                <img
+                  src={item.src}
+                >
+                </img>
+                {/* <Camera
                   size={isLarge ? 48 : 32}
                   className="text-white/15"
-                />
+                /> */}
               </div>
 
               {/* Hover overlay */}

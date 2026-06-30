@@ -1,4 +1,4 @@
-import { Mic, Sliders, Disc3, Music4, Users, Podcast } from "lucide-react";
+// import { Mic, Sliders, Disc3, Music4, Users, Podcast } from "lucide-react";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { ServicesData } from "@/data/servicesData";
@@ -14,7 +14,7 @@ export default function ServicesSection() {
   return (
     <SectionWrapper id="services">
       <SectionHeading label="WHAT WE DO" title="Our Services" align="center" />
-      <div className="min-h-screen bg-black text-white py-20">
+      <div className="min-h-screen bg-black text-white py-20 font-poppins">
         <div className="max-w-7xl mx-auto px-6">
           <p className="text-gray-400 mb-2 text-sm font-bold">Our Services</p>
           <h2 className="text-2xl text-gray-400 font-semibold">
