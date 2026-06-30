@@ -5,30 +5,6 @@ export const aboutHighlights = [
   { icon: 'Headphones', title: 'Premium Sound', description: 'Acoustically treated rooms with top-tier monitoring' },
 ];
 
-export const equipment = [
-    {
-      name : "Fender Stratocaster",
-      brand : "Fender",
-      category : "Guitar",
-      description : "",
-      isNew : false,
-    },
-    {
-      name : "Epiphone SG",
-      brand : "Epiphone",
-      category : "Guitar",
-      description : "",
-      isNew : false
-    },
-    {
-      name : "Pearl Demon Drive",
-      brand : "Pearl",
-      category : "Drums",
-      description : "Double pedal for drums",
-      isNew : true,
-    },
-];
-
 export const portfolioItems = [
   { id: 1, title: 'Echoes of Dawn', category: 'Album Production', description: 'Full album production for indie rock band featuring 12 tracks.' },
   { id: 2, title: 'Urban Frequencies', category: 'Mixing & Mastering', description: 'Hip-hop EP mixing and mastering for independent artist.' },
