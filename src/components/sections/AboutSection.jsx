@@ -20,7 +20,7 @@ export default function AboutSection() {
               <span className="text-sm font-light">SoundSpace Studio</span>
               <h2 className="font-black text-3xl tracking-tight leading-tight uppercase">
                 Defining the Standard of
-                <span className="px-1 text-cyan-700">Modern Audio</span>{" "}
+                <span className="px-1 text-[#b58709]">Modern Audio</span>{" "}
                 Production
               </h2>
             </div>
@@ -39,15 +39,15 @@ export default function AboutSection() {
               return (
                 <GlassCard
                   key={idx}
-                  className="relative p-8 rounded-lg min-h-[260px] flex flex-col justify-between transition-all duration-300"
+                  className="relative p-8 rounded-lg min-h-[260px] flex flex-col justify-between transition-all duration-300 hover:bg-gradient-to-br from-lime-950/40 via-emerald-950/30 to-zinc-900 border border-lime-500/20 hover:translate-y-[-12px]"
                 >
                   <div className="absolute top-3 left-3 w-3 h-3 border-t border-l border-zin-600 rounded-tl-sm" />
                   <div className="w-12 h-12 rounded-full flex items-center justify-center border">
                     <Icon size={32} />
                   </div>
                   <div className="mt-12">
-                  <h3 className="">{item.title}</h3>
-                  <p className="">{item.description}</p>
+                  <h3 className="text-xl font-bold leading-tight">{item.title}</h3>
+                  <p className="text-xs font-light">{item.description}</p>
 
                   </div>
                 </GlassCard>
