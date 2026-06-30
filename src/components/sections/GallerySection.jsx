@@ -1,7 +1,6 @@
-import { Camera, Eye } from 'lucide-react';
+import { Eye, Camera } from 'lucide-react';
 import SectionWrapper from '@/components/ui/SectionWrapper';
 import SectionHeading from '@/components/ui/SectionHeading';
-import { galleryItems } from '../../data/siteData';
 import { GalleryData } from '@/data/galleryData';
 
 const gradients = [
@@ -45,10 +44,10 @@ export default function GallerySection() {
                   src={item.src}
                 >
                 </img>
-                {/* <Camera
+                <Camera
                   size={isLarge ? 48 : 32}
                   className="text-white/15"
-                /> */}
+                />
               </div>
 
               {/* Hover overlay */}
